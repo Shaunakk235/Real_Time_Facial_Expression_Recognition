@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Load the pre-trained facial expression recognition model
-model = load_model(r'C:\Users\shaun\Downloads\GIT Projects\Facial Expression Detection\fer2013_big_XCEPTION.54-0.66.hdf5')
+model = load_model(r'path_to_your_pretrained_model')
 
 # Define emotions
 emotions = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
